@@ -10,7 +10,7 @@
 
 int check_cycle(listint_t *list)
 {
-	listint_t me;
+	listint_t *me;
 
 	if (!list)
 	{
