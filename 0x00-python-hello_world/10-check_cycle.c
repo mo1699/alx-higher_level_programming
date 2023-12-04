@@ -23,7 +23,6 @@ int check_cycle(listint_t *list)
 		{
 			return (1);
 		}
-		list = list->next;
 		me = me->next->next;
 	}
 	return (0);
