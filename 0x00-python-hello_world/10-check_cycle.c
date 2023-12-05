@@ -7,22 +7,17 @@
  * Description - check for loops in LL
  * Return: 1 if cycled, 0 if not
  */
-
 int check_cycle(listint_t *list)
 {
 	listint_t *me;
 
 	if (!list)
-	{
 		return (0);
-	}
 	me = list->next;
 	while (me && me->next)
 	{
-		if (list == me)
-		{
+		if (me == list)
 			return (1);
-		}
 		list = list->next;
 		me = me->next->next;
 	}
