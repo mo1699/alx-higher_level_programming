@@ -7,4 +7,4 @@ if N > 5:
 elif N == 0:
     print(f"Last digit of {number:d} is {N:d} and is 0")
 elif N < 6 and N != 0:
-    print(f"Last digit of {number:d} is {N:d} and is less than 6 and not 0")
+    print(f"Last digt of {number:d} is {N:d} and is less than 6 and not 0")
