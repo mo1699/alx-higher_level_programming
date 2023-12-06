@@ -7,8 +7,8 @@
 
 
 def fizzbuzz():
-    N = i % 3
     for i in range(1, 101):
+        N = i % 3
         if N == 0 and N == 0:
             print("FizzBuzz ", end="")
         elif N == 0:
