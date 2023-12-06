@@ -2,6 +2,6 @@
 for i in range(0, 10):
     for e in range(i + 1, 10):
         if digit1 == 8 and digit2 == 9:
-            print("{}{}".format(digit1, digit2))
+            print("{}{}".format(i, e))
         else:
-            print("{}{}".format(digit1, digit2), end=", ")
+            print("{}{}".format(i, e), end=", ")
