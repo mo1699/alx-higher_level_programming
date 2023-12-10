@@ -17,12 +17,19 @@ int check_cycle(listint_t *list)
 
 
 	me = list->next;
+/* loop  continues as long as me (and me->next) is not NULL
+ * this This prevents accessing a NULL pointer which is the last pointer*/
 	while (me && me->next)
 	{
+/*checks whether the two pointers, list and me, have met
+ * if it happen that mean there is cycle
+ * and return 1*/
 		if (me == list)
 			return (1);
+/*if not me move to nest node */
 		list = list->next;
 		me = me->next->next;
 	}
+/* when accessing to last node (NULL) that mean no cycle and return 0*/
 	return (0);
 }
