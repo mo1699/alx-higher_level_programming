@@ -41,6 +41,5 @@ listint_t *insert_node(listint_t **head, int number)
 /*set the new node between the last node and the next of it*/
 	new->next = node->next;
 	node->next = new;
-	*head = new;
 	return (new);
 }
