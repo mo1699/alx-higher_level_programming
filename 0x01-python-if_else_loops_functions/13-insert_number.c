@@ -18,19 +18,29 @@ listint_t *insert_node(listint_t **head, int number)
 	if (new == NULL)
 		return (NULL);
 	new->n = number;
-
+/*
+ * check if the list (head) == NULL or 
+ * the number which i want put it <= the cuurent num
+ */
 	if (node == NULL || node->n >= number)
 	{
+/*
+ * if it happen we will put the new node in the first node
+ */
 		new->next = node;
-		*head = new;
+		*head = new;/*updating the head*/
 		return (new);
 	}
-
+/*
+ * check if the next node is null or not
+ * to knowe if we at the last node or not
+ */	
+/*until the last node*/
 	while (node->next && node->next->n < number)
 		node = node->next;
-
+/*set the new node between the last node and the next of it*/
 	new->next = node->next;
 	node->next = new;
-
+	*head = new;
 	return (new);
 }
