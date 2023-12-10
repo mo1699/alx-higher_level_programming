@@ -10,11 +10,14 @@
 int check_cycle(listint_t *list)
 {
 	listint_t *me;
-
+/*If the list is empty, there can't be a cycle, so
+ * it returns 0 (indicating no cycle)*/
 	if (!list)
 		return (0);
+
+
 	me = list->next;
-	while (me && me->next)
+	while (me->next)
 	{
 		if (me == list)
 			return (1);
