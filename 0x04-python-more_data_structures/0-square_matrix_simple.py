@@ -8,6 +8,6 @@ def square_matrix_simple(matrix=[]):
     """
     new_mat = []
     for row in matrix:
-        res = list(map(lambda x: x**2 , row))
+        res = list(map(lambda x: x**2, row))
         new_mat.append(res)
     return new_mat
