@@ -10,4 +10,4 @@ def square_matrix_simple(matrix=[]):
     for row in matrix:
         res = list(map(lambed x: x**2 , row))
         new_mat.append(res)
-        return new_mat
+    return new_mat
