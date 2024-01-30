@@ -15,4 +15,4 @@ def uniq_add(my_list=[]):
             sum += num
             prev_num = num
 
-    return summ
+    return sum
