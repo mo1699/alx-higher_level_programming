@@ -7,7 +7,7 @@ def common_elements(set_1, set_2):
     common elements in two sets
     """
 
-    listss = {}
+    listss = []
 
     for i in set_1:
         for j in set_2:
