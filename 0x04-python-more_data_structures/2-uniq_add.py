@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 def uniq_add(my_list=[]):
     """
     A function that adds all unique
@@ -10,8 +11,8 @@ def uniq_add(my_list=[]):
     prev_num = None
 
     for num in my_list:
-        if num != prev_num:   
+        if num != prev_num:
             sum += num
-            prev_num = num  
+            prev_num = num
 
-    return sum
+    return summ
