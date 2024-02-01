@@ -12,12 +12,12 @@ def safe_print_list(my_list=[], x=0):
     Returns:
         The number of elements printed.
     """
-    i = 0
+    res = 0
     try:
         for i in range(x):
             print(my_list[i], end='')
-            i += 1
+            res += 1
     except IndexError:
         None
     print()
-    return i
+    return res
