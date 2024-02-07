@@ -63,5 +63,5 @@ class Rectangle:
             row = '#' * self.__width
 
             r_r = (row + '\n') * self.__height
-
+        """ rstrip() for clear terminal from spaces"""
             return r_r.rstrip()
