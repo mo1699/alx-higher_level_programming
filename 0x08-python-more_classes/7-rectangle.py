@@ -50,7 +50,7 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
         else:
-            row = (str(self.print_symbol)) * self.__width
+            row = (str(Rectangle.print_symbol)) * self.__width
 
             r_r = (row + '\n') * self.__height
 
